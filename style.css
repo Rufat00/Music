@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+body{
+    background: linear-gradient(rgb(104, 205, 252),rgb(50, 230, 221));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+}
+main{
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.15));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    display: block;
+    width: 50%;
+    padding: 0.3%;
+}
+.title{
+    display: flex;
+    width: 98%;
+    margin: auto;
+    justify-content: space-between;
+}
+#logo{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+#number{
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+    height: 25px;
+    padding: 1%;
+    width: 40px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin: 3%;
+}
+.left,.right{
+    width: 50%;
+}
+.left img{
+    height: 300px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 0 20px 12px rgba(240,240,240,0.2);
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 3px;
+    margin: 0 15px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #5bdeff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.volum{
+    display: flex;
+    width: 86%;
+    margin: auto;
+    margin-top: 3%;
+}
+.volum input{
+    margin-top: 2%;
+}
+#volumShow{
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+    height: 25px;
+    padding: 1%;
+    width: 40px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+#volumBtn{
+    display: flex;
+    background: #5bdeff;
+    height: 25px;
+    padding: 1%;
+    width: 40px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    box-shadow: 1px 0 20px 12px rgba(240,240,240,0.2);
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+#volumBtn:hover,#volumShow:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+.right{
+    display: block;
+    text-align: center;
+}
+#songTitle{
+    margin-bottom: 1%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.btn button{
+    margin: 2%;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: azure;
+    transition: transform 0.1s;
+}
+.btn button:hover{
+    transform: scale(1.1);
+    transition: transform 0.1s;
+}
+.durationBlock{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10%;
+}
+.durationBlock span{
+    display: flex;
+    background: rgba(255, 255, 255, 0.3);
+    height: fit-content;
+    padding: 1%;
+    width: fit-content;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.autoR{
+    margin: auto;
+    display: flex;
+    width: 40%;
+    margin-top: 3%;
+}
+#auto,#repeat{
+    margin: auto;
+    width: fit-content;
+    padding: 4%;
+    border-radius: 5px;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: azure;
+    transition: transform 0.1s;
+}
+#auto:hover,#repeat:hover{
+    transform: scale(1.05);
+    transition: transform 0.1s;
+}
+#auto.on{
+    background: #5bdeff;
+    color: azure;
+    box-shadow: 1px 0 20px 12px rgba(240,240,240,0.2);
+}

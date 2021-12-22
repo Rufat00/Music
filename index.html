@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="title">
+            <span id="logo"><i class='bx bxs-music' ></i>MusicLab</span>
+            <span id="number">
+                <p class="present">1</p>
+                <p>/</p>
+                <p class="total">5</p>
+            </span>
+        </div>
+        <div class="main">
+            <div class="left">
+                <img src="" id="trackImg">
+                <div class="volum">
+                    <p id="volumShow">50</p>
+                    <i class='bx bxs-volume-full' id="volumBtn" onclick="muteSound()"></i>
+                    <input type="range" min="0" max="100" value="50" id="volume" onchange="volumeChange()">
+                </div>
+            </div>
+            <div class="right">
+                <h1 id="songTitle">First Song</h1>
+                <p id="singer">First Singer</p>
+                <div class="btn">
+                    <button id="last" onclick="previousSong()"><i class='bx bx-skip-previous' ></i></button>
+                    <button id="naw" onclick="justPlay()"><i class='bx bx-play' ></i></button>
+                    <button id="next"  onclick="nextSong()"><i class='bx bx-skip-next'></i></button>
+                </div>
+                <div class="autoR">
+                    <button id="repeat" onclick="repeat()">repeat<i class='bx bx-repeat'></i></button>
+                    <button id="auto" onclick="autoPlay()">Auto <i class='bx bx-refresh'></i></button>
+                </div>
+                <div class="durationBlock">
+                    <span>
+                        <p id="currentTime"></p>
+                        <p id="slash"></p>
+                        <p id="durationShow"></p>
+                    </span>
+                    <input type="range" min="0" max="100" value="0" id="duration" onchange="changeDuration()">
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="app.js"></script>
+</body>
+</html>
