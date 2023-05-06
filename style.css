@@ -23,9 +23,10 @@ main{
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     display: block;
-    width: 50%;
+    width: 1000px;
     padding: 0.3%;
 }
+
 .title{
     display: flex;
     width: 98%;
@@ -197,4 +198,25 @@ input[type="range"]::-webkit-slider-thumb{
     background: #5bdeff;
     color: azure;
     box-shadow: 1px 0 20px 12px rgba(240,240,240,0.2);
+}
+
+@media (max-width: 1100px) {
+    main{
+        width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .left img{
+        height: 300px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 1px 0 20px 12px rgba(240,240,240,0.2);
+    }
 }
